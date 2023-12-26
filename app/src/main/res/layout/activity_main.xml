@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/download_media"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:letterSpacing="0.1" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/url_Et"
+        android:background="@drawable/link_et_background"
+        android:elevation="15dp"
+        android:hint="@string/enter_link_here"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/downloadBTN"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/download"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/download_btn_background"
+        android:elevation="15dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/rec_view_item"
+        android:layout_margin="10dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

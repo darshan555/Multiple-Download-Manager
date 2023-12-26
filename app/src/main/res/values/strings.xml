@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MultipleDownload</string>
+    <string name="download_media">Download Multiple Item</string>
+    <string name="enter_link_here">Enter link here</string>
+    <string name="download">Download</string>
+    <string name="start">Start</string>
+    <string name="cancel">cancel</string>
+    <string name="download_item">Item Name</string>
+</resources>
